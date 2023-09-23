@@ -6,9 +6,9 @@ Incubator for virtual threads based prototypes.
 
 ## Prerequisites
 
-- [Vert.x 4.3.7](https://vertx.io/docs/4.3.7)
-- Java 19 using preview feature
-  - [OpenJDK 19](https://jdk.java.net/19/)
+- [Vert.x 4.4.5](https://vertx.io/docs/4.4.5)
+- Java 21
+  - [OpenJDK 21](https://jdk.java.net/21/)
   - [Maven](https://stackoverflow.com/questions/52232681/compile-and-execute-a-jdk-preview-feature-with-maven)
   - [Intellij](https://foojay.io/today/how-to-run-project-loom-from-intellij-idea/)
 
@@ -33,8 +33,7 @@ Incubator for virtual threads based prototypes.
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
         <configuration>
-          <release>19</release>
-          <compilerArgs>--enable-preview</compilerArgs>
+          <release>21</release>
         </configuration>
       </plugin>
       <plugin>

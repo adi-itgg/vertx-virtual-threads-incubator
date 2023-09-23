@@ -16,7 +16,7 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-latest]
-        jdk: [19]
+        jdk: [21]
     runs-on: ${{ matrix.os }}
     steps:
       - name: Checkout
@@ -43,7 +43,7 @@ jobs:
         uses: actions/setup-java@v2
         with:
           distribution: temurin
-          java-version: 19
+          java-version: 21
       - name: Get project version
         run: echo "PROJECT_VERSION=$(mvn org.apache.maven.plugins:maven-help-plugin:evaluate -Dexpression=project.version -B | grep -v '\[')" >> $GITHUB_ENV
       - name: Maven deploy
