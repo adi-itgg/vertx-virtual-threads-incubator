@@ -10,7 +10,7 @@
   </parent>
 
   <artifactId>vertx-virtual-threads-incubator</artifactId>
-  <version>1.0.0-SNAPSHOT</version>
+  <version>1.0.0</version>
   <packaging>pom</packaging>
 
   <properties>
@@ -61,6 +61,7 @@
           <artifactId>maven-compiler-plugin</artifactId>
           <version>3.11.0</version>
           <configuration>
+            <release>21</release>
             <!--<compilerArgs>&#45;&#45;enable-preview</compilerArgs>-->
           </configuration>
         </plugin>
